@@ -55,25 +55,50 @@
             <h2>Como é seu<br><em>cabelo?</em></h2>
             <p class="muted">A textura ajuda a visualizar melhor o volume e escolher um corte que combine com você.</p>
             <div class="texture-grid" id="textureOptions">
-              <button class="texture-card selected" data-hair="liso" type="button"><span class="texture-icon">〰</span><b>Liso</b><small>Fios alinhados</small></button>
-              <button class="texture-card" data-hair="ondulado" type="button"><span class="texture-icon">∿</span><b>Ondulado</b><small>Movimento natural</small></button>
-              <button class="texture-card" data-hair="cacheado" type="button"><span class="texture-icon">◎</span><b>Cacheado</b><small>Cachos definidos</small></button>
-              <button class="texture-card" data-hair="crespo" type="button"><span class="texture-icon">✳</span><b>Crespo</b><small>Volume e textura</small></button>
+              <button class="texture-card selected" data-hair="liso" type="button">
+                <span class="texture-icon">〰</span><b>Liso</b><small>Fios alinhados</small>
+              </button>
+              <button class="texture-card" data-hair="ondulado" type="button">
+                <span class="texture-icon">∿</span><b>Ondulado</b>
+                <small>Movimento natural</small>
+              </button>
+              <button class="texture-card" data-hair="cacheado" type="button">
+                <span class="texture-icon">◎</span><b>Cacheado</b>
+                <small>Cachos definidos</small>
+              </button>
+              <button class="texture-card" data-hair="crespo" type="button">
+                <span class="texture-icon">✳</span><b>Crespo</b>
+                <small>Volume e textura</small>
+              </button>
             </div>
-            <div class="panel-bottom"><span class="micro-note">SEU ESTILO, SEM PRESSA.</span><button class="primary-btn" id="nextBtn" type="button">Escolher corte <span>↗</span></button></div>
+            <div class="panel-bottom"><span class="micro-note">SEU ESTILO, SEM PRESSA.</span>
+              <button class="primary-btn" id="nextBtn" type="button">Escolher corte <span>↗</span></button>
+            </div>
           </div>
         </section>
       </div>
-      <footer class="site-footer"><span>© CASA BRAVA BARBEARIA</span><span>FEITO PARA QUEM VALORIZA OS DETALHES.</span><span>AGENDAMENTO EM 4 ETAPAS</span></footer>
+      <footer class="site-footer">
+        <span>© CASA BRAVA BARBEARIA</span>
+        <span>FEITO PARA QUEM VALORIZA OS DETALHES.</span>
+        <span>AGENDAMENTO EM 4 ETAPAS</span>
+      </footer>
     </section>
 
     <section id="requestView" class="request-view hidden">
-      <div class="request-top"><a class="back-link" href="./">← Voltar ao agendamento</a><span class="live-tag"><i></i> PEDIDO RECEBIDO</span></div>
+      <div class="request-top">
+        <a class="back-link" href="./">← Voltar ao agendamento</a>
+        <span class="live-tag"><i></i> PEDIDO RECEBIDO</span>
+      </div>
       <p class="eyebrow">CASA BRAVA <span class="gold-slash">/</span> SOLICITAÇÃO</p>
       <h1 class="request-title">PEDIDO <em>DO CLIENTE</em></h1>
       <p class="muted request-subtitle">Confira os detalhes enviados para organizar o atendimento.</p>
       <div class="request-grid">
-        <div class="request-visual"><div class="request-scene" id="requestScene"><canvas id="requestCanvas" aria-label="Prévia 3D do corte solicitado"></canvas></div><div class="request-visual-caption">PRÉVIA 3D • REFERÊNCIA VISUAL</div></div>
+        <div class="request-visual">
+          <div class="request-scene" id="requestScene">
+          <canvas id="requestCanvas" aria-label="Prévia 3D do corte solicitado"></canvas>
+      </div>
+      <div class="request-visual-caption">PRÉVIA 3D • REFERÊNCIA VISUAL</div>
+    </div>
         <div class="request-details"><div class="request-status"><span class="open-dot"></span> AGUARDANDO CONFIRMAÇÃO</div><h2 id="requestCut">Corte selecionado</h2><p id="requestDescription" class="muted"></p><div class="detail-list" id="requestDetails"></div><p class="request-note">A prévia é ilustrativa. Confirme os detalhes com o cliente antes de iniciar o atendimento.</p><button class="primary-btn" id="copyRequest" type="button">Copiar resumo <span>↗</span></button></div>
       </div>
     </section>
